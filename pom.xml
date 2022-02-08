@@ -67,12 +67,12 @@
 
     <repositories>
         <repository>
-            <id>bs-public</id>
-            <url>https://repo.pluginwiki.us/repository/maven-releases/</url>
-        </repository>
-        <repository>
             <id>bs-repo</id>
             <url>http://ci.pluginwiki.us/plugin/repository/everything/</url>
+        </repository>
+        <repository>
+            <id>bs-public</id>
+            <url>https://repo.pluginwiki.us/repository/maven-releases/</url>
         </repository>
         <repository>
             <id>bs-nms</id>
