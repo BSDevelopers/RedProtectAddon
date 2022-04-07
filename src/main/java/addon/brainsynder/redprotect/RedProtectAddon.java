@@ -2,15 +2,11 @@ package addon.brainsynder.redprotect;
 
 import br.net.fabiozumbi12.RedProtect.Bukkit.RedProtect;
 import br.net.fabiozumbi12.RedProtect.Bukkit.Region;
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
-import org.bukkit.plugin.Plugin;
 import simplepets.brainsynder.addon.AddonConfig;
 import simplepets.brainsynder.addon.presets.RegionModule;
 import simplepets.brainsynder.api.Namespace;
-import simplepets.brainsynder.api.plugin.SimplePets;
 import simplepets.brainsynder.api.user.PetUser;
-import simplepets.brainsynder.debug.DebugLevel;
 
 @Namespace(namespace = "RedProtect")
 public class RedProtectAddon extends RegionModule {
@@ -28,17 +24,6 @@ public class RedProtectAddon extends RegionModule {
     private boolean mountingDefault = true;
     private boolean mountingAdmin = false;
 
-
-    @Override
-    public boolean shouldEnable() {
-        Plugin plugin = Bukkit.getPluginManager().getPlugin("RedProtect");
-        if (plugin == null) {
-            SimplePets.getDebugLogger().debug(DebugLevel.ERROR, "RedProtect wasn't found!");
-            SimplePets.getDebugLogger().debug(DebugLevel.ERROR, "Please download it from: https://www.spigotmc.org/resources/15841/");
-            return false;
-        }
-        return true;
-    }
 
     @Override
     public void init() {

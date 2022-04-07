@@ -13,5 +13,12 @@
     "&7- pet-moving",
     "&7- pet-riding",
     "&7- pet-mounting"
+  ],
+
+  "plugin-support": [
+    {
+      "name": "RedProtect",
+      "url": "https://www.spigotmc.org/resources/15841/"
+    }
   ]
 }
