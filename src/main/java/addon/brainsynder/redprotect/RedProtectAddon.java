@@ -2,21 +2,18 @@ package addon.brainsynder.redprotect;
 
 import br.net.fabiozumbi12.RedProtect.Bukkit.RedProtect;
 import br.net.fabiozumbi12.RedProtect.Bukkit.Region;
-import com.google.common.collect.Lists;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.plugin.Plugin;
 import simplepets.brainsynder.addon.AddonConfig;
-import simplepets.brainsynder.addon.presets.RegionAddon;
+import simplepets.brainsynder.addon.presets.RegionModule;
 import simplepets.brainsynder.api.Namespace;
 import simplepets.brainsynder.api.plugin.SimplePets;
 import simplepets.brainsynder.api.user.PetUser;
 import simplepets.brainsynder.debug.DebugLevel;
 
-import java.util.List;
-
 @Namespace(namespace = "RedProtect")
-public class RedProtectAddon extends RegionAddon {
+public class RedProtectAddon extends RegionModule {
     private boolean outsideRegion = true;
 
     private boolean spawningDefault = true;
@@ -90,29 +87,6 @@ public class RedProtectAddon extends RegionAddon {
         mountingDefault = config.getBoolean("pet-mounting.default", true);
         mountingAdmin = config.getBoolean("pet-mounting.admin-only", false);
         super.loadDefaults(config);
-    }
-
-    @Override
-    public double getVersion() {
-        return 0.1;
-    }
-
-    @Override
-    public String getAuthor() {
-        return "brainsynder";
-    }
-
-    @Override
-    public List<String> getDescription() {
-        return Lists.newArrayList(
-                "&7This addon hooks into",
-                "&7RedProtect so you can utilize",
-                "&7the flags added via this addon: ",
-                "&7- pet-spawning",
-                "&7- pet-moving",
-                "&7- pet-riding",
-                "&7- pet-mounting"
-        );
     }
 
     @Override

@@ -1,0 +1,17 @@
+{
+  "name": "RedProtect",
+  "author": "brainsynder",
+
+  "version": 0.2,
+  "supported-build": 163,
+
+  "description": [
+    "&7This addon hooks into",
+    "&7RedProtect so you can utilize",
+    "&7the flags added via this addon: ",
+    "&7- pet-spawning",
+    "&7- pet-moving",
+    "&7- pet-riding",
+    "&7- pet-mounting"
+  ]
+}
